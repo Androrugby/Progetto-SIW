@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<div>
+		<div th:object="${azienda}">
+			<p th:text="'nome: ' + ${name}" />
+		</div>
+		
+		<table>
+		<th:block th:each="azienda : ${aziende}">
+			<tr>
+				<td th:text="${azienda.id}">...</td>
+				<td th:text="${azienda.name}">...</td>
+			</tr>
+		</th:block>
+		</table>
+		<div><a href="/addAziendaCentro">Aggiungi Centro</a></div>
+		<div><a href="/addAziendaUtente">Aggiungi Utente</a></div>
+	</div>
+</body>
+</html>

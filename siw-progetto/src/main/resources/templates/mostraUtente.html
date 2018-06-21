@@ -1,0 +1,24 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+	<title>Utente</title>
+</head>
+<body>
+	<div>
+		<div>
+			<div th:object="${utente}">
+			<p th:text="'nome: ' + ${name}" />
+		</div>
+		
+		<table>
+		<th:block th:each="utente : ${utente}">
+			<tr>
+				<td th:text="${utente.id}">...</td>
+				<td th:text="${utente.name}">...</td>
+			</tr>
+		</th:block>
+		</table>
+		</div>		
+	</div>	
+</body>
+</html>

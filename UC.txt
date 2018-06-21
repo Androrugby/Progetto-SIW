@@ -1,0 +1,43 @@
+UC1-Registrazione nuovo allievo
+	-Un Utente vuole utilizzare il portale per registrare un nuovo allievo.
+	-L' Utente sceglie l'opzione "Insert New Allievo".
+	-L' Utente inserisce i dati relativi al nuovo allievo e conferma l'inserimento
+	-L' Utente conferma la registrazione.
+	-Il nuovo allievo viene registrato dal sistema.
+
+UC7-Ricerca attività
+	-Un Utente vuole cercare un Attività
+	-L' Utente sceglie l'opzione "Search Attività"
+	-Il sistema mostra la form di ricerca attività
+	-L' utente inserisce il nome dell'attività desiderata
+	-il sistema mostra la pagina relativa all'attività, se esistente nel database
+
+UC8-Ricerca allievo
+	-Un Utente vuole cercare un Allievo
+	-L' Utente sceglie l'opzione "Search Allievo"
+	-Il sistema mostra la form di ricerca allievo
+	-L' Utente inserisce il nome dell'allievo desiderato
+	-il sistema mostra la pagina relativa all'allievo, se esistente nel database
+
+
+UC9-Ricerca centro
+	-Un utente vuole cercare un Centro
+	-L' utente sceglie l'opzione "Search Centro"
+	-Il sistema mostra la form di ricerca centro
+	-L' utente inserisce il nome del centro desiderato
+	-il sistema mostra la pagina relativa al centro, se esistente nel database
+
+
+UC10-Creazione attività
+	-Un utente vuole creare una nuova attività
+	-L' utente sceglie l'opzione "Insert New Attività"
+	-Il sistema mostra la pagina relativa alla creazione dell'attività contenente la form
+	-L' utente inserisce i dati relativi alla nuova attività e conferma l'inserimento
+	-Il sistema registra la nuova attività e mostra l'elenco delle attività
+
+UC11-Creazione centro
+	-Un utente vuole creare una nuovo centro
+	-L' utente sceglie l'opzione "Insert New centro"
+	-Il sistema mostra la pagina relativa alla creazione del centro contenente la form
+	-L' utente inserisce i dati relativi al nuovo centro e conferma l'inserimento
+	-Il sistema registra il nuovo centro e mostra l'elenco dei centri

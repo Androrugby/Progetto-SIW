@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+<style>
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+td {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 7px;
+
+}
+
+th {
+	border: 3px solid #ffffff;
+	text-align: center;
+	padding: 7px;
+	background-color: #000000;
+}
+
+tr:nth-child(even) {
+	background-color: #dddddd;
+}
+</style>
+	<title>SIW Progetto</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+</head>
+<body>
+
+		<!-- Header -->
+			<header id="header" class="skel-layers-fixed">
+				<h1><a href="#">SIW</a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a th:href="@{/tornaindex}">Home</a></li>
+						<li><a href="#" class="button special">Log Out</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Banner -->
+			<section id="banner">
+				<div class="inner">
+					<h2><b style="color:white">Lista Utenti</b></h2>
+					<ul class="actions">
+					</ul>
+				</div>
+			</section>
+			<div></div>
+	<table>
+		<tr>
+			<th><font size="4"><b>ID</b></font></th>
+			<th><font size="4"><b>Nome</b></font></th>
+			<th><font size="4"><b>Telefono</b></font></th>
+		</tr>
+		<th:block th:each="utente : ${utenti}">
+		<tr>
+			<td><b th:text="${utente.id}">...</b></td>
+			<td><b th:text="${utente.name}">...</b></td>
+			<td><b th:text="${utente.numero}">...</b></td>
+		</tr>
+		</th:block>
+	</table>
+
+</body>
+</html>

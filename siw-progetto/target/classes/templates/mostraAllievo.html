@@ -1,0 +1,27 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+	<title>Allievo</title>
+</head>
+<body>
+	<div>
+		
+			<p th:text="'name: ' + ${allievo.name}" />
+			<p th:text="'lastname: ' + ${allievo.lastName}" />
+			<p th:text="'email:' + ${allievo.email}" />
+			<p th:text="'phone:' + ${allievo.phone}" />
+			<p th:text="'date:' + ${allievo.giorno}" />
+			<p th:text="'place:' + ${allievo.place}" />
+		
+		<table>
+		<th:block th:each="attivita : ${attivitas}">
+			<tr>
+				<td th:text="${attivita.id}">...</td>
+				<td th:text="${attivita.name}">...</td>
+			</tr>
+		</th:block>
+		</table>
+		<div><a href="/addAllievoAttivita">Aggiungi attivita</a></div>
+	</div>
+</body>
+</html>

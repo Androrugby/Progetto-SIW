@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Centro:</title>
+</head>
+<body>
+	<p> Scegli Centro</p>
+    <form th:action="@{/formACen}" method="POST">
+    	<h4>attivita:</h4>
+		<select name="id" >
+   			  <option th:each="centro: ${centri}"
+            		  th:value="${centro.id}"
+            		  th:text="${centro.name}">
+    		  </option>
+		</select>
+    	<p><input type="submit" value="vai"></p>
+    </form>   
+</body>
+</html>
